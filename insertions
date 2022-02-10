@@ -1,0 +1,51 @@
+use boutique;
+
+insert into boutiquier values 
+(1, 'Mariam', 'Mahamat', 'F', 'proprietaire All'),
+(2, 'Adoum', 'Grene', 'M', 'travailleur A3'),
+(3, 'Yano', 'Dari', 'M', 'travailleur A2'),
+(4, 'Hisseine', 'Hassane', 'M', 'travailleur A2'),
+(5, 'Minguebeye', 'Valerie', 'F', 'travailleur A1'),
+(6, 'Abakar', 'Mallah', 'M', 'travailleur A3'),
+(7, 'Ronyliam', 'Sonia', 'F', 'travailleur A2'),
+(8, 'Nassir', 'Ahmat', 'M', 'travailleur A2'),
+(9, 'Elvis', 'Fouba', 'M', 'travailleur A3'),
+(10, 'Danimbe', 'Fred', 'M', 'travailleur A0') ;
+
+
+select * from boutiquier;
+
+
+insert into _client values 
+(1, 'Mahamat', 'Abakar', 'M', '00235 66000001'),
+(2, 'Brahim', 'Kabo', 'M', '00235 66000002'),
+(3, 'Saleh', 'Ali', 'M', '00235 66000003'),
+(4, 'Guetnan', 'Honoré', 'M', '00235 66000004'),
+(5, 'Khadidja', 'Ahmat', 'F', '00235 66000005'),
+(6, 'Zeinab', 'Mahamat', 'F', '00235 66000006'),
+(7, 'Djimtoloum', 'Sonia', 'F', '00235 66000007'),
+(8, 'Djeguedem', 'Hubert', 'M', '00235 66000008'),
+(9, 'Rj', 'Salomon', 'M', '00235 66000009'),
+(10, 'Deneramba', 'Alliance', 'F', '00235 66000010') ;
+
+
+select * from _client;
+
+
+
+insert into article values 
+(1, 'Clé USB 128Go', 5000, '100', 1, 3),
+(2, 'Ordinateur MacBookPro', 500000, '1', 6, 5),
+(3, 'Disk Dur 500Go', 40000, '3', 7, 4),
+(4, 'USB 4Go', 1500, '25', 2, 1),
+(5, 'USB 8Go', 3000, '4', 8, 2),
+(6, 'Ordinateur hp corei5', 150000, '2', 1, 10),
+(7, 'Disc Dur 320Go', 25000, '2', 5, 8),
+(8, 'Souris cable', 1500, '25', 9, 7),
+(9, 'Souris sans cable', 5000, '3', 3, 6),
+(10, 'Ordiateur PB', 35000, '35', 2, 9) ;
+
+
+select * from article;
+
+

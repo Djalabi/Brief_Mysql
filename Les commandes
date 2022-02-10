@@ -1,0 +1,46 @@
+
+create database boutique;
+
+------------------------------------------
+
+use boutique;
+
+------------------------------------------
+
+create table _client 
+(
+	id_cl int not null auto_increment primary key,
+    nom_cl varchar(30) not null,
+    prenom_cl varchar(30) not null,
+    sexe_cl char(1),
+    tel_cl varchar(25) not null
+    );
+    
+------------------------------------------
+
+create table boutiquier 
+(
+	id_boot int not null auto_increment primary key,
+    nom_boot varchar(30) not null,
+    prenom_boot varchar(30) not null,
+    sexe_boot char(1),
+    status_boot varchar(25) not null
+    );
+    
+-------------------------------------------    
+    
+create table article 
+(
+	id_article int not null auto_increment primary key,
+    libelle varchar(30) not null,
+    prix float not null,
+    quantite varchar(30),
+    id_client int not null,
+    id_boutiquier int not null,
+    CONSTRAINT fk_cl_id
+		FOREIGN KEY (id_client)
+        REFERENCES _client(id_cl),
+	CONSTRAINT fk_boot_id
+		FOREIGN KEY (id_boutiquier)
+        REFERENCES boutiquier(id_boot)
+    );

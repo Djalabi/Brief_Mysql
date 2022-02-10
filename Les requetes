@@ -1,0 +1,22 @@
+
+			Les requetes simples, de jointure de 2 puis 3 tables
+
+
+----------------- Les requetes simples---------------------------------------------------
+
+	select * from boutiquier;
+	select * from _client;
+	select * from article;
+
+
+----------------les requetes de jointure de deux tables-----------------------------------
+
+SELECT * FROM _client INNER JOIN article ON _client.id_cl=article.id_article;
+SELECT * FROM boutiquier INNER JOIN article ON boutiquier.id_boot=article.id_article;
+
+
+------------les requetes de jointure de trois tables-------------------------------------- 
+
+
+SELECT * FROM article INNER JOIN _client ON article.id_article = _client.id_cl INNER JOIN boutiquier ON article.id_article = boutiquier.id_boot;
+
